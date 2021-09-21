@@ -4,7 +4,7 @@ import React from 'react'
 const UserSectionComponent = ({loginAccount, handleSelectedMenu, handleLogout, defaultProfPic, Link}) => {    
     return (
         <>
-             <div className="dropdown">
+             <div className="dropdown" style={{zIndex: "100"}}>
                     <a href="google.com" className="d-flex align-items-center link-dark text-decoration-none dropdown-toggle" id="dropdownUser2" data-bs-toggle="dropdown" aria-expanded="false">
                         <img src={loginAccount[0].thumbnail_url || defaultProfPic || '/static/media/blank_image.07300db7.png'} alt="" width="32" height="32" className="rounded-circle me-2"/>
                         <strong>{loginAccount[0].first_name}</strong>

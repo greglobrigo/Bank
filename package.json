@@ -1,6 +1,6 @@
 {
   "homepage": "https://greglobrigo.github.io/bank-app",
-  "name": "banking-web-app",
+  "name": bank-app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -44,8 +44,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "gh-pages": "^3.2.3"
   }
 }

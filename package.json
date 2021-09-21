@@ -1,6 +1,6 @@
 {
   "homepage": "https://greglobrigo.github.io/bank-app",
-  "name": bank-app",
+  "name": "bank-app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

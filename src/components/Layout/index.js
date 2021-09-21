@@ -186,7 +186,7 @@ const Index = () => {
         </div>
          : 
          <>
-        <Navbar bg="light" expand="lg">
+        <Navbar bg="light" expand="lg" style={{zIndex: "100"}}>
             <Container>
                 <Navbar.Brand href="/">
                     <a href="/" onClick={() => handleSelectedMenu(0)} className="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">

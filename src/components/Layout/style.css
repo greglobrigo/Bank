@@ -1,0 +1,248 @@
+nav.navbar.navbar-expand-lg.navbar-light.bg-light {
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    width: 100%;
+}
+
+div#root {
+    display: flex;
+    flex-direction: column;    
+}
+
+
+
+@media (min-width: 768px) {
+    div#root {
+        flex-direction: unset;
+    }
+    .side-bar.d-flex.flex-column.flex-shrink-0.p-3.bg-light {
+        margin: 10vh 0 0 10vw;
+        background-color: unset !important;    
+    }
+    .routes-container {
+        width: 100%;
+        margin: 10vh 10vw 0 0;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1240px) {
+    .side-bar.d-flex.flex-column.flex-shrink-0.p-3.bg-light {
+        margin: 10vh 0 0 10vw       
+    }
+
+    .routes-container {
+        margin: 10vh 10vw 0 0     
+    }
+    
+}
+
+@media (max-width: 900px) {
+    .side-bar.d-flex.flex-column.flex-shrink-0.p-3.bg-light {
+        margin: 10vh 0 0 0       
+    }
+
+    .routes-container {
+        margin: 10vh 0 0 0     
+    }
+    
+}
+
+@media (max-width: 750px) {    
+
+    .routes-container {
+        margin: 15vh 5vw 0 5vw     
+    }
+    
+}
+
+.side-bar {
+    width: 15rem;
+    height: 80vh;      
+}
+
+
+.nav-link {
+    display: flex;
+    align-items: center;    
+} 
+
+.menus {
+    margin-right: 0.5rem;
+}
+
+.rightArrow {
+    margin-left: auto;
+    -webkit-transition-duration: 0.2s;
+    -moz-transition-duration: 0.2s;
+    -o-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    -o-transition-property: -o-transform;
+    transition-property: transform;
+}
+
+
+.accordion-item {
+    border: unset;
+}
+.accordion-header {
+    color: #f7f7ff !important;
+}
+
+.accorder-button {
+    background-color: unset;
+}
+
+button.accordion-button {
+    padding: 0.5rem 1rem;
+}
+
+button.accordion-button.collapsed {
+    background-color: #f7f7ff !important;
+}
+
+ul.btn-toggle-nav.list-unstyled.fw-normal.pb-1.small {
+    background-color: #f7f7ff;
+}
+
+.accordion-button::after {
+transform: rotate(-90deg);
+}
+
+.accordion-button:not(.collapsed)::after {
+    transform: rotate(0deg);
+}
+
+.accordion-body {
+    padding: 0;
+}
+
+div#exampleModalLive {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.modal-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 !important;
+}
+
+.account-row {
+    display: flex;
+    flex-direction: column;
+}
+
+.login {
+    padding: .375rem .75rem;
+}
+
+.login-modal {
+    width: 75%; 
+}
+
+input.login.form-control {
+    width: 100%;
+    border-radius: 0.25rem;
+}
+
+.login-modal-dialog {
+    display: flex;
+    justify-content: center;
+}
+
+
+a.navbar-brand {
+    width: 14rem;
+}
+
+button.navbar-toggler {
+    width: 4rem;
+}
+
+@media (min-width: 576px) {
+    .container, .container-sm {
+        max-width: unset;
+    }
+}
+
+.mobile-menus {
+    background-color: #7245B7;
+    color: #fff !important;
+    text-decoration: none;
+}
+
+.dropdown-menu.show {
+    padding: 0;
+}
+
+.dropdown-menu {
+    background-color: #f7f7ff;
+    border: unset
+}
+
+a.nav-link {
+    padding: rem 1rem !important;
+    border-radius: 5px;
+}
+
+.hr {
+    margin-top: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #000 !important;
+}
+
+.input-group-addon {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    cursor: pointer;
+    padding: .5rem .75rem;
+    margin-bottom: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.25;
+    color: #495057;
+    text-align: center;
+    background-color: #e9ecef;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: .25rem;
+    width: 3rem;
+}   
+
+
+.mobile-links {
+    width: 100%
+}
+
+.log-in-account-title {
+    padding: unset !important;
+    margin-top: 1rem;
+}
+
+.login-modal-title-container {
+    padding: 0rem !important;
+    display: flex;
+    flex-direction: column;
+}
+
+.login-bank-logo {
+    display: flex;
+    justify-content: center;
+}
+
+@media (min-width: 480px){
+    .login-modal-main-container {
+        max-width: 300px;
+        margin: 1.75rem auto;
+    }
+}

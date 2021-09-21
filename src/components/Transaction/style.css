@@ -1,0 +1,45 @@
+.user-transaction-section {
+    padding: 1rem;
+}
+
+h5 {
+    text-align: center;
+}
+
+.container-fluid {
+    height: 80vh;
+    overflow-y: auto;
+}
+.container-fluid::-webkit-scrollbar { 
+    /* WebKit */   
+    display: none;
+}
+
+@media (max-width: 479px) {
+    .transaction-body {
+        display: flex;
+        flex-direction: column;
+    }
+    .user-row {
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
+
+@media screen and (min-width: 1240px) {
+    .flex-container {
+        display: flex;
+    }    
+    
+}
+
+@media (min-width: 1200px) and (max-width: 1239px) {
+    .user-transaction-section {
+        width: 100%;
+    }
+}
+
+.modal-title {
+    padding: 1rem 1rem
+}

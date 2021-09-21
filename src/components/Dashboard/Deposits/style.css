@@ -1,0 +1,38 @@
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    padding: 0 1rem 1rem;
+    width: 100%;
+    overflow-y: scroll;
+    height: 70vh;
+}
+
+@media (min-width: 920px) {
+    .dashboard-container {
+        height: 70vh !important;
+    }
+}
+
+.dashboard-container::-webkit-scrollbar { 
+    /* WebKit */   
+    display: none;
+}
+
+h3 {
+    margin: 0;
+}
+
+.transaction-header {
+    position: sticky;
+    top: 0;
+    background-color: #f7f7ff;
+    text-align: center;
+    padding-bottom: 1rem;  
+}
+
+.table-header {
+    position: sticky;
+    top: 0;
+    background-color: #f7f7ff !important;
+    z-index: 99;
+}

@@ -46,7 +46,7 @@ const TableComponent = ({
        <p>Are you sure you want to delete this user?</p>
        </Modal.Body>
        <Modal.Footer>
-       <Button variant="secondary">No</Button>
+       <Button onClick={()=>setDeleteUser(false)} variant="secondary">No</Button>
        <Button onClick={()=>{handleDeleteUser(delAccount); setDeleteUser(false)}} variant="primary">Yes</Button>
        </Modal.Footer>
        </Modal>  

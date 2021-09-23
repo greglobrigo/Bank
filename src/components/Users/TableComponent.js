@@ -1,10 +1,11 @@
-import React from "react";
+import React, {useState} from "react";
 import {FillDelete, Search, ContactInfo, PersonPlus, ArrowSortedDownIcon, ArrowSortedUpIcon} from "./component";
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Fade  from 'react-reveal/Fade'
 import ButtonComponent from "./ButtonComponent";
 import "./style.css";
+import {Modal, Button} from 'react-bootstrap'
 
 const TableComponent = ({
   setCurrentSelectedData,
@@ -24,16 +25,32 @@ const TableComponent = ({
   sortByCurrentBalance,
   convertToMoney,
   isOrdered,  
-  setShow  
+  setShow,
+  delAccount,
+  setDelAccount  
 }) => {
+
+  const [deleteUser, setDeleteUser] = useState(false)
  
 
   return (
     <>        
       <ToastContainer
       pauseOnFocusLoss={false}   
-      limit={8}      
-      />
+      limit={8}     
+      />    
+
+      <Modal
+      show={deleteUser}>  
+      <Modal.Body>
+       <p>Are you sure you want to delete this user?</p>
+       </Modal.Body>
+       <Modal.Footer>
+       <Button variant="secondary">No</Button>
+       <Button onClick={()=>{handleDeleteUser(delAccount); setDeleteUser(false)}} variant="primary">Yes</Button>
+       </Modal.Footer>
+       </Modal>  
+                      
       <div className="btns-n-search">  
         <div className="add-client-btns">
           <ButtonComponent
@@ -106,7 +123,7 @@ const TableComponent = ({
           </thead>
 
           <tbody>
-            {users.length > 0 ? (
+            {users.length > 0 ? (                   
               users.map((data, index) => {
                 return (
                   <Fade up duration={index>10 ? 1000: `${index}00`}>
@@ -125,18 +142,18 @@ const TableComponent = ({
                         dbsToggle={"modal"}
                         dbsTarget={"#detailsModal"}
                       />
-
-                      {/* <ButtonComponent
-                        handleFunction={() => handleDeleteUser(data.account_no)}
+                      <ButtonComponent
+                        handleFunction={() => {setDeleteUser(true); setDelAccount(data.account_no)}}
                         iconName={<FillDelete />}
                         btnClass={"btn btn-danger"}
-                      /> */}
-                    </td>
+                      />     
+                     </td>               
                   </tr>
                   </Fade>
+                  
                 );
               })
-            ) : (
+            )   : (
               <th className="no-user-available" colSpan="100%">
                 <h3>No User Available</h3>
               </th>

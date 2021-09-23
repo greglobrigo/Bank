@@ -32,7 +32,8 @@ const useHooks = () => {
     const [show, setShow] = useState(false);
     const [modalShow, setModalShow] = useState(false);  
     const [searchTerm, setSearchTerm] = useState('');  
-    const [searchResults, setSearchResults] = useState([]);    
+    const [searchResults, setSearchResults] = useState([]); 
+    const [delAccount, setDelAccount] = useState('')   
     const [modalDetailsAlert, setModalDetailsAlert] = useState({
         insufficientBalance: false,
         successful: false,
@@ -250,7 +251,7 @@ const useHooks = () => {
         const index = users.findIndex(user => {return user.account_no === id})
         users.splice(index, 1)
         setUsers([...users])
-        checkDummyData(users)   
+        checkDummyData(users)
     }
 
     // Checking if dummy exist - (Load Data button)
@@ -808,7 +809,9 @@ const useHooks = () => {
         sortByCurrentBalance,
         isOrdered, 
         show,
-        setShow  
+        setShow,
+        delAccount,
+        setDelAccount  
     }
 }
 

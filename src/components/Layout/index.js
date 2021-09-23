@@ -26,7 +26,6 @@ import LinkComponent from './LinkComponent';
 import LoginModalComponent from './LoginComponent';
 import UserSectionComponent from './UserSectionComponent';
 import TransactionComponent from '../Transaction'
-import BudgetAppComponent from '../BudgetApp'
 import { Link } from "react-router-dom";
 
 

@@ -65,7 +65,9 @@ const Index = () => {
         sortByCurrentBalance,
         isOrdered,
         show,
-        setShow                     
+        setShow,
+        delAccount,
+        setDelAccount,               
     } = useHooks();
 
     
@@ -91,7 +93,9 @@ const Index = () => {
                 convertToMoney={convertToMoney}
                 isOrdered={isOrdered}   
                 show={show}
-                setShow={setShow}                          
+                setShow={setShow}  
+                delAccount={delAccount}
+                setDelAccount={setDelAccount}                         
             />       
             {/* <!-- Modal --> */}
             <ModalComponent

@@ -1,7 +1,7 @@
 .card-container {
     display: grid;
-    grid-template-columns: repeat(6, minmax(100px, 1fr));
-    grid-template-rows: repeat(4, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fill(minmax(100px, 1fr)));
+    grid-template-rows: repeat(auto-fill (minmax(150px, 1fr)));
     height: 80vh;
     gap: 1em;
     overflow-y: scroll;  
@@ -59,8 +59,8 @@
 
     .card-container {
         display: grid;
-        grid-template-columns: repeat(4, minmax(100px, 1fr));
-        grid-template-rows: repeat(6, minmax(150px, 1fr));
+        grid-template-columns: repeat(auto-fill(minmax(100px, 1fr)));
+    grid-template-rows: repeat(auto-fill (minmax(150px, 1fr)));
         max-height: 80vh;
         gap: 1em
     }
@@ -96,8 +96,8 @@
 
     .card-container {
         display: grid;
-        grid-template-columns: repeat(4, minmax(75px, 1fr));
-        grid-template-rows: repeat(10, minmax(150px, 1fr));
+        grid-template-columns: repeat(auto-fill(minmax(75px, 1fr)));
+    grid-template-rows: repeat(auto-fill (minmax(150px, 1fr)));
         max-height: 80vh;
         gap: 1em;        
     }

@@ -4,11 +4,11 @@ import Zoom  from 'react-reveal/Zoom';
 
 const CardComponent = ({svg, setSelected, isAdmin, Link, cardTitle, cardText, item}) => {
     return ( 
-        <>
+       
         <Zoom  up>
         <div className={`box-item ${item}`}>
         <div className="card">
-        <object className="svg" data={svg} width="auto" height="auto"> </object>
+        <object className="svg" data={svg} width="auto" height="250"> </object>
         <div className="card-body">
         <h5 className="card-title">{cardTitle}</h5>        
         <span className="card-span">
@@ -22,7 +22,7 @@ const CardComponent = ({svg, setSelected, isAdmin, Link, cardTitle, cardText, it
         </div>     
         </div>
         </Zoom>
-       </>        
+            
     )
 }
 

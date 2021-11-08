@@ -1,6 +1,6 @@
 # React Banking-Application  
 
-<h2> Demo: https://greglobrigo.github.io/bank-app/ </h2> 
+<h2> Demo: </h2>  <h4> https://greglobrigo.github.io/bank-app/ </h4>
 <br>
 
 <b>Default admin credentials:</b> <br>

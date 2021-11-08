@@ -6,9 +6,10 @@
 username: admin<br>
 password: 1234 <br>
 
-<b>Default user credentials</b> (when load test data is pressed via admin user <br>
+<b>Default user credentials</b> (when load test data is pressed via admin user) <br>
 username: username <br>
-password: password (e.g.) <br>
+password: username <br>
+(e.g.) <br>
 username: Greg <br>
 password: Greg <br>
 

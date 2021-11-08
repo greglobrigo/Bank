@@ -43,11 +43,11 @@ const TableComponent = ({
       <Modal
       show={deleteUser}>  
       <Modal.Body>
-       <p>Are you sure you want to delete this user?</p>
+       <p>Are you sure you want to delete user {delAccount.account_no} {delAccount.first_name} {delAccount.last_name}?</p>
        </Modal.Body>
        <Modal.Footer>
        <Button onClick={()=>setDeleteUser(false)} variant="secondary">No</Button>
-       <Button onClick={()=>{handleDeleteUser(delAccount); setDeleteUser(false)}} variant="primary">Yes</Button>
+       <Button onClick={()=>{handleDeleteUser(delAccount.account_no); setDeleteUser(false)}} variant="primary">Yes</Button>
        </Modal.Footer>
        </Modal>  
                       
@@ -143,7 +143,7 @@ const TableComponent = ({
                         dbsTarget={"#detailsModal"}
                       />
                       <ButtonComponent
-                        handleFunction={() => {setDeleteUser(true); setDelAccount(data.account_no)}}
+                        handleFunction={() => {setDeleteUser(true); setDelAccount(data)}}
                         iconName={<FillDelete />}
                         btnClass={"btn btn-danger"}
                       />     

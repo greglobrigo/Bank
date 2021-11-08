@@ -1,18 +1,19 @@
 # React Banking-Application  
 
-<h2> Demo: </h2>  <h4> https://greglobrigo.github.io/bank-app/ </h4>
+<span><h2> Demo: </h2> <h4> https://greglobrigo.github.io/bank-app/ </h4> </span>
 <br>
 
 <b>Default admin credentials:</b> <br>
 username: admin<br>
 password: 1234 <br>
 
-<b>Default user credentials</b> (when load test data is pressed via admin user) <br>
-username: username <br>
+<b>Default user credentials</b> (when load test data is loaded via admin user) <br>
+username: first name <br>
 password: username <br>
 (e.g.) <br>
 username: Greg <br>
 password: Greg <br>
+*Case Sensitive <br>
 
 ## Features
 <section> 

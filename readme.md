@@ -2,6 +2,8 @@
 
 ## Demo <br>
 
+https://greglobrigo.github.io/bank-app/ <br>
+
 <b>Default admin credentials:</b> <br>
 username: admin<br>
 password: 1234 <br>

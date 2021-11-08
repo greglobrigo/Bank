@@ -252,6 +252,7 @@ const useHooks = () => {
         users.splice(index, 1)
         setUsers([...users])
         checkDummyData(users)
+        toastNotify("error", `Deleted user ${id}`, "top-right", "colored")
     }
 
     // Checking if dummy exist - (Load Data button)
@@ -742,7 +743,18 @@ const useHooks = () => {
                 progress: undefined, 
                 theme: colored
                 }); 
-        } 
+        } else if (type==="error"){
+            toast.error(str, {
+                position: position,
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: colored
+                });
+            }
     }
     
     return {

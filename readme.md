@@ -1,17 +1,16 @@
 # React Banking-Application  
-<hr>
 
 ## Demo <br>
 
-<b>Default admin credentials:</b>
-username: admin
-password: 1234 
+<b>Default admin credentials:</b> <br>
+username: admin<br>
+password: 1234 <br>
 
-<b>Default user credentials</b> (when load test data is pressed via admin user) 
-username: username
-password: password (e.g.)
-username: Greg
-password: Greg
+<b>Default user credentials</b> (when load test data is pressed via admin user <br>
+username: username <br>
+password: password (e.g.) <br>
+username: Greg <br>
+password: Greg <br>
 
 ## Features
 <section> 

@@ -1,4 +1,4 @@
-# React Banking-Application  
+# BLG React Banking-Application  
 
 *A banking app that allows users to add and delete clients as well as make transactions such as withdrawals, transfers and deposits.*
 
